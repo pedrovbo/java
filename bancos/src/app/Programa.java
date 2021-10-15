@@ -9,12 +9,12 @@ public class Programa {
 
 	public static void main(String[] args) {
 
-		// TODO Auto-generated method stub
+		
 		Scanner lerInt = new Scanner(System.in);
 		Scanner lerString = new Scanner(System.in);
-		int escolhaTipoConta;
-		String cpfCliente, tipoConta = "", continua = "";
-		char tipoMovimento = 0; 
+		int escolhaTipoConta, contadorMovimentos = 0;
+		String cpfCliente, tipoConta = "";
+		char tipoMovimento = 0, continua = 0; 
 		int diaData;
 		double valorMovimento = 0;
 
@@ -50,17 +50,17 @@ public class Programa {
 			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
-					int i = 0; i < 50; ++i)
+					int i = 0; i < 20; ++i)
 				System.out.println();
 			// LIMPEZA DE TELA
 
 			conta.mostraTela();
 			System.out.printf("MOVIMENTO - D-debito ou C-Crédito: ");
-			tipoMovimento = lerString.next().charAt(tipoMovimento);
+			tipoMovimento = lerString.next().toUpperCase().charAt(tipoMovimento);
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
 			System.out.printf("CONTINUAR S/N: ");
-			continua = lerString.nextLine();
+			continua = lerString.next().toUpperCase().charAt(continua);
 			// CONTA CORRENTE
 		} else if (escolhaTipoConta == 2) {
 			System.out.println("DIGITE O NÚMERO DO SEU CPF: ");
@@ -74,18 +74,18 @@ public class Programa {
 			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
-					int i = 0; i < 50; ++i)
+					int i = 0; i < 20; ++i)
 				System.out.println();
 			// LIMPEZA DE TELA
 
 			// INICIO TELA 2
 			conta.mostraTela();
 			System.out.printf("MOVIMENTO - D-debito ou C-Crédito: ");
-			tipoMovimento = lerString.next().charAt(tipoMovimento);
+			tipoMovimento = lerString.next().toUpperCase().charAt(tipoMovimento);
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
 			System.out.printf("CONTINUAR S/N: ");
-			continua = lerString.nextLine();
+			continua = lerString.next().toUpperCase().charAt(continua);
 			// CONTA ESPECIAL
 		} else if (escolhaTipoConta == 3) {
 			
@@ -100,15 +100,17 @@ public class Programa {
 			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
-					int i = 0; i < 20; ++i)
+					int i = 0; i < 20; ++i){
 				System.out.println();
+					}
 			// LIMPEZA DE TELA
 
-			for (int movimentos = 0; movimentos < 10; movimentos++) {
+			do {
 				// INICIO TELA 2
 				conta.mostraTela();
 				System.out.printf("MOVIMENTO - D-debito ou C-Crédito: ");
-				tipoMovimento = lerString.next().charAt(tipoMovimento); //TODO colocar to uppercase nos demais tipoMovimento				
+				tipoMovimento = 0;
+				tipoMovimento = lerString.next().toUpperCase().charAt(tipoMovimento); 				
 				System.out.printf("Valor movimento: R$ ");
 				valorMovimento = lerInt.nextDouble();
 
@@ -122,15 +124,18 @@ public class Programa {
 				
 				System.out.println(conta.imprimeTotalConta());
 				
-				
+				continua = 0;
 				System.out.print("Continua S/N :");
-				continua = lerString.nextLine();
-				if (continua == "N") {
-					break;
-				}				
+				continua = lerString.next().toUpperCase().charAt(continua);
 				
-				// CONTA EMPRESA
-			}
+					
+							
+				
+				contadorMovimentos++;
+			} while (continua != 'S' || contadorMovimentos < 10); 
+			
+			
+			// CONTA EMPRESA
 		} else if (escolhaTipoConta == 4) {
 			System.out.println("DIGITE O NÚMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
@@ -143,18 +148,18 @@ public class Programa {
 			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
-					int i = 0; i < 50; ++i)
+					int i = 0; i < 20; ++i)
 				System.out.println();
 			// LIMPEZA DE TELA
 
 			// INICIO TELA 2
 			conta.mostraTela();
 			System.out.printf("MOVIMENTO - D-debito ou C-Crédito: ");
-			tipoMovimento = lerString.next().charAt(tipoMovimento);
+			tipoMovimento = lerString.next().toUpperCase().charAt(tipoMovimento);
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
 			System.out.printf("CONTINUAR S/N: ");
-			continua = lerString.nextLine();
+			continua = lerString.next().toUpperCase().charAt(continua);
 
 			// CONTA ESTUDANTIL
 		} else if (escolhaTipoConta == 5) {
@@ -169,18 +174,18 @@ public class Programa {
 			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
-					int i = 0; i < 50; ++i)
+					int i = 0; i < 20; ++i)
 				System.out.println();
 			// LIMPEZA DE TELA
 
 			// INICIO TELA 2
 			conta.mostraTela();
 			System.out.printf("MOVIMENTO - D-debito ou C-Crédito: ");
-			tipoMovimento = lerString.next().charAt(tipoMovimento);
+			tipoMovimento = lerString.next().toUpperCase().charAt(tipoMovimento);
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
 			System.out.printf("CONTINUAR S/N: ");
-			continua = lerString.nextLine();
+			continua = lerString.next().toUpperCase().charAt(continua);
 		}
 
 		lerInt.close();
