@@ -40,7 +40,7 @@ public class Programa {
 		if (escolhaTipoConta == 1) {
 			System.out.println("DIGITE O NÚMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
-			System.out.println("INFORME O DIA DO MẼS: ");
+			System.out.println("INFORME O DIA DO MÊS: ");
 			diaData = lerInt.nextInt();
 			ContaPoupanca conta = new ContaPoupanca(escolhaTipoConta, cpfCliente, diaData);
 			System.out.println("CONTA POUPANÇA CRIADA");
