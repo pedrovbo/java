@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="fj11-lib-contas">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/fj11-lib-contas.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
