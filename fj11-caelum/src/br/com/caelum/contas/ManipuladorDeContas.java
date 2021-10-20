@@ -17,4 +17,15 @@ public class ManipuladorDeContas {
 		this.conta.setNumero(56789);
 		this.conta.setTitular("Batman");
 	}
+	
+	public void deposita(Evento evento) {
+		double valorDigitado = evento.getDouble("valor");
+		this.conta.deposita(valorDigitado);
+	}
+	
+	public void saca(Evento evento) {
+		double valorDigitado = evento.getDouble("valor");
+		this.conta.deposita(valorDigitado);
+	}
+	
 }
