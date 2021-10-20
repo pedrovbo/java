@@ -11,6 +11,7 @@ public class Gerente extends Funcionario { // a keyword extends faz com que Gere
 			System.out.println("Acesso Permitido!");
 			return true;
 		} else {
+			System.out.println("Acesso Negado!");
 			return false;
 		}
 
