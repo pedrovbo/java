@@ -19,18 +19,6 @@ public class Secretaria extends Funcionario {
 	public void setSetor(String setor) {
 		this.setor = setor;
 	}
-
-	public static void main(String[] args) {
-		Secretaria secretaria = new Secretaria();
-		secretaria.setSalario(2000.0);
-		secretaria.setMatricula(30021);
-		secretaria.setSetor("Escritorio");
-		secretaria.setCpf("9000000000");
-		secretaria.setNome("Maria");
-		
-		System.out.println(secretaria.getBonificacao());
-		
-		System.out.println(secretaria.getNome() + " " + secretaria.getCpf() + " " + secretaria.getMatricula() + " "  + secretaria.getSalario() + " "  + secretaria.getSetor() + " "  + secretaria.getBonificacao());
-	}
+	
 	
 }

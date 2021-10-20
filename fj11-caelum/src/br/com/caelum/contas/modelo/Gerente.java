@@ -44,7 +44,8 @@ public class Gerente extends Funcionario { // a keyword extends faz com que Gere
 	 * sobrescrito // por um método específico. public double getBonificacao() {
 	 * return this.salario * 0.15; }
 	 */
-
+	
+	@Override
 	public double getBonificacao() {
 		return super.getBonificacao() + 1000; // a keyword super indica que estamos utilizando
 												// o metódo da superclasse(classe mãe)
