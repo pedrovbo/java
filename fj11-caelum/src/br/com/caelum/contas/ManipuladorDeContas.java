@@ -25,7 +25,7 @@ public class ManipuladorDeContas {
 	
 	public void saca(Evento evento) {
 		double valorDigitado = evento.getDouble("valor");
-		this.conta.deposita(valorDigitado);
+		this.conta.saca(valorDigitado);
 	}
 	
 }
