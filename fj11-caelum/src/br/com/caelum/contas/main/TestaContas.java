@@ -10,15 +10,6 @@ public class TestaContas {
 		
 	}
 	
-	public void deposita(Evento evento) {
-		double valorDigitado = evento.getDouble("valor");
-		this.conta.deposita(valorDigitado);
-	}
-	
-	public void saca(Evento evento) {
-		double valorDigitado = evento.getDouble("valor");
-		this.conta.deposita(valorDigitado);
-	}
 	
 	
 	
