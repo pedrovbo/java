@@ -2,7 +2,7 @@ package br.com.caelum.contas.modelo;
 
 public class Conta {
 
-    private double saldo;
+    protected double saldo;
     String titular;
     int numero;
 
@@ -64,5 +64,16 @@ public class Conta {
     public String getTitular() {
         return titular;
     }
+
+
+	public String getTipo() {
+		
+		return "Conta";
+	}
+	
+	public void transfere(double valor, Conta conta) {
+		this.saca(valor);
+		conta.deposita(valor);
+	}
 
 }
