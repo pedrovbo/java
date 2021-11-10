@@ -10,4 +10,8 @@
 
 ## fj11-caelum
 
-- Caelum FJ11 Course
+- Caelum FJ11 Course.
+
+## project-for-javadoc-test
+
+- A javadoc test.
