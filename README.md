@@ -4,6 +4,10 @@
 
 - PostgreSQL studies.
 
+## basic-studies
+
+- Java Syntax and Miscellaneous Studies.
+
 ## ecommerce
 
 - Simple ecommerce project.
