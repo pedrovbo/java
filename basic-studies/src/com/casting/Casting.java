@@ -1,6 +1,6 @@
 package com.casting;
 
-public class casting {
+public class Casting {
     public static void main(String[] args) {
         byte b1;
         short s1 = 1000;
