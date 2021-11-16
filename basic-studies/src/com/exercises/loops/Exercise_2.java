@@ -17,7 +17,7 @@ public class Exercise_2 {
         System.out.println("Digite sua senha: ");
         senha = leia.nextLine();
 
-        while (usuario.contentEquals(senha)){
+        while (usuario.contentEquals(senha)) {
             System.out.println("A senha não pode ser igual ao nome do usuário, escolha outra senha!");
             senha = leia.nextLine();
         }
