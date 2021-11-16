@@ -9,15 +9,15 @@ import java.util.Scanner;
  */
 public class Exercise_1 {
     public static void main(String[] args) {
-        double nota;
+        int nota;
         Scanner leia = new Scanner(System.in);
 
         System.out.println("Digita sua nota: ");
-        nota = leia.nextDouble();
+        nota = leia.nextInt();
 
         while(nota < 0 || nota > 10){
             System.out.println("Valor inválido, digite a nota novamente: ");
-            nota = leia.nextDouble();
+            nota = leia.nextInt();
         }
         leia.close();
         System.out.println("Fim do Programa");
