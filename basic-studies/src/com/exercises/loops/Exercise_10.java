@@ -13,7 +13,18 @@ public class Exercise_10 {
 
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = aleatorio.nextInt(100);
-            System.out.println("Valor aleatório = " + numeros[i] + " incluído no índice = " + i);
+        }
+
+        System.out.println("Números aleatórios gerados: ");
+        for (int i: numeros
+             ) {
+            System.out.print(i + " ");
+        }
+
+        System.out.println("\nSucessores dos números aleatórios: ");
+        for (int i: numeros
+             ) {
+            System.out.print((i+1)+ " ");
         }
 
 
