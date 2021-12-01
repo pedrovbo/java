@@ -2,7 +2,7 @@
 
 ## banco
 
-- PostgreSQL studies.
+- Java Study Project of a Bank.
 
 ## basic-studies
 
