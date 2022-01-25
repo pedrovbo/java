@@ -19,3 +19,7 @@
 ## project-for-javadoc-test
 
 - A javadoc test.
+
+## web-servers-application-servers-servlet-jsp-jdbc-studies
+
+- hands-on projects to learn Web Servers, Application Servers, Servlet, JSP, JDBC.
