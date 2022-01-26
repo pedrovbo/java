@@ -20,6 +20,6 @@
 
 - A javadoc test.
 
-## web-servers-application-servers-servlet-jsp-jdbc-studies
+## web-servers-application-servers-servlet-jsp-jdbc-ejb-studies
 
 - hands-on projects to learn Web Servers, Application Servers, Servlet, JSP, JDBC.
