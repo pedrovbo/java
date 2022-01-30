@@ -1,0 +1,11 @@
+com\pvbo\disciplinasws_cliente\GetTema.class
+com\pvbo\disciplinasws_cliente\GetTemaResponse.class
+com\pvbo\disciplinasws_cliente\ObjectFactory.class
+com\pvbo\disciplinasws_cliente\resources\JavaEE8Resource.class
+com\pvbo\servlet\DisciplinaWSServlet.class
+com\pvbo\disciplinasws_cliente\DisciplinasWSProvedor.class
+com\pvbo\disciplinasws_cliente\DisciplinasWSProvedor_Service.class
+com\pvbo\disciplinasws_cliente\GetModulosTema.class
+com\pvbo\disciplinasws_cliente\GetModulosTemaResponse.class
+com\pvbo\disciplinasws_cliente\package-info.class
+com\pvbo\disciplinasws_cliente\JAXRSConfiguration.class
