@@ -6,25 +6,21 @@ public class Stuff {
 	protected String description;
 	protected int quantity;
 	protected String location;
-	
+
 	public Stuff() {
-		
+
 	}
-	
+
 	public Stuff(int id) {
 		this.id = id;
 	}
 
 	public Stuff(int id, String name, String description, int quantity, String location) {
-		this.name = name;
-		this.description = description;
-		this.quantity = quantity;
-		this.location = location;
+		this(name, description, quantity, location);
 		this.id = id;
 	}
 
 	public Stuff(String name, String description, int quantity, String location) {
-		super();
 		this.name = name;
 		this.description = description;
 		this.quantity = quantity;
@@ -70,10 +66,5 @@ public class Stuff {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	
-	
-	
-	
-	
-	
+
 }

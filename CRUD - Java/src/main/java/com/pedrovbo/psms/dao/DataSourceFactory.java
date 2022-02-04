@@ -19,8 +19,7 @@ public class DataSourceFactory {
 	private final DataSource daso;
 	private static final Logger LOGGER = Logger.getLogger(DataSourceFactory.class.getName());
 
-	DataSourceFactory() 
-	{
+	DataSourceFactory() {
 		MysqlDataSource daso = new MysqlDataSource();
 		String rootPath = Objects
 				.requireNonNull(Thread.currentThread().getContextClassLoader().getResource("database.properties"))
