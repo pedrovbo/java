@@ -1,0 +1,21 @@
+Fri Jan 28 01:46:58 GFT 2022 : Apache Derby Servidor de Rede - 10.14.2.0 - (1828579) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Fri Jan 28 01:46:58 GFT 2022:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instância a816c00e-017e-9f02-0ad0-ffff8466ebe2
+no diretório de banco de dados C:\Banco de Dados\Derby\bancoJPA 
+
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.13+10-LTS-370
+user.dir=C:\Java\Derby\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Banco de Dados\Derby
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Jan 28 01:55:57 GFT 2022:
+Encerrando a instância a816c00e-017e-9f02-0ad0-ffff8466ebe2
+Fri Jan 28 01:55:57 GFT 2022 Thread[DRDAConnThread_3,5,main] (DATABASE = bancoJPA), (DRDAID = {2}), Banco de dados 'bancoJPA' fechado.
+----------------------------------------------------------------
+Fri Jan 28 01:56:46 GFT 2022: Shutting down Derby engine
+----------------------------------------------------------------
