@@ -14,10 +14,7 @@ public class Exercise71 {
         for (int i = 0; i < numeros.length; i++) {
 
             numeros[i] = 999;
-
-        }
-        for (int i : numeros) {
-            System.out.print(i + " ");
+            System.out.print(numeros[i] + " ");
         }
     }
 }
