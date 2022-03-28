@@ -38,6 +38,8 @@ public class Main {
 
         a.imprimeAgenda();
 
+        a.imprimePessoa(0);
+
 
 
 

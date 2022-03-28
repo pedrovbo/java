@@ -5,13 +5,9 @@ import com.pedrovbo.exercicio1.Pessoa;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Vector;
 
 public class Agenda {
     private ArrayList<Pessoa> pessoas = new ArrayList<>();
-    // private Iterator<Pessoa> itr = pessoas.iterator();
-
-    //Pessoa[] pessoas = new Pessoa[10];
     int cadastros = 0;
 
     public void armazenaPessoas(String nome, int idade, float altura) throws ParseException {
@@ -20,9 +16,9 @@ public class Agenda {
 
     public void removePessoa(String nome) {
         nome = nome.toUpperCase();
-        //TODO: tentar implementar foreach
-        for (Iterator iterator = this.pessoas.iterator(); iterator.hasNext(); ) {
-            Pessoa p = (Pessoa) iterator.next();
+
+        for (Iterator<Pessoa> iterator = this.pessoas.iterator(); iterator.hasNext(); ) {
+            Pessoa p = iterator.next();
             if (p.getNome().toUpperCase().contentEquals(nome)) {
                 iterator.remove();
             }
@@ -32,8 +28,7 @@ public class Agenda {
     public int buscaPessoa(String nome) {
         nome = nome.toUpperCase();
         int index = 0;
-        for (Iterator iterator = this.pessoas.iterator(); iterator.hasNext(); ) {
-            Pessoa p = (Pessoa) iterator.next();
+        for (Pessoa p : this.pessoas) {
             if (p.getNome().toUpperCase().contentEquals(nome)) {
                 index = this.pessoas.indexOf(p);
             }
@@ -48,19 +43,20 @@ public class Agenda {
         for (Pessoa i : this.pessoas
         ) {
             agenda.append("Nome: ").append(i.getNome())
-                    .append("Altura: ").append(i.getAltura())
-                    .append("Data de Nascimento: ").append(i.getDataNascimento())
+                    .append(" Altura: ").append(i.getAltura())
+                    .append(" Data de Nascimento: ").append(i.getDataNascimento())
                     .append("\n\n");
         }
         System.out.println(agenda);
     }
 
     public void imprimePessoa(int index) {
-        Iterator iterator = this.pessoas.iterator();
-        for (Pessoa i : pessoas
-        ) {
-
+        for (Pessoa p : this.pessoas) {
+            if (index == this.pessoas.indexOf(p)) {
+                System.out.println(p);
+            }
         }
+
     }
 
     public ArrayList<Pessoa> getPessoas() {
