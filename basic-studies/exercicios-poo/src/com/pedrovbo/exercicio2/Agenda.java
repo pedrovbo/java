@@ -11,7 +11,11 @@ public class Agenda {
     int cadastros = 0;
 
     public void armazenaPessoas(String nome, int idade, float altura) throws ParseException {
-        this.pessoas.add(new Pessoa(nome, idade, altura));
+        if (this.cadastros < 10) {
+            this.pessoas.add(new Pessoa(nome, idade, altura));
+            this.cadastros++;
+        } else
+            System.out.println("A agenda está cheia! Não foi possível cadastrar");
     }
 
     public void removePessoa(String nome) {

@@ -21,15 +21,16 @@ public class Main {
         System.out.println(p);
 
         a.armazenaPessoas("Pedro", 33, 1.73f);
-        a.armazenaPessoas("Alice", 33, 1.73f);
-        a.armazenaPessoas("Robson", 33, 1.73f);
+        a.armazenaPessoas("Alice", 5, 1.73f);
+        a.armazenaPessoas("Robson", 34, 1.73f);
         a.armazenaPessoas("Lua", 33, 1.73f);
-        a.armazenaPessoas("Gessica", 33, 1.73f);
-        a.armazenaPessoas("Katarine", 33, 1.73f);
-        a.armazenaPessoas("Marina", 33, 1.73f);
-        a.armazenaPessoas("Thiago", 33, 1.73f);
-        a.armazenaPessoas("José", 33, 1.73f);
-        a.armazenaPessoas("Ana", 33, 1.73f);
+        a.armazenaPessoas("Gessica", 30, 1.73f);
+        a.armazenaPessoas("Katarine", 30, 1.73f);
+        a.armazenaPessoas("Marina", 22, 1.73f);
+        a.armazenaPessoas("Thiago", 13, 1.73f);
+        a.armazenaPessoas("José", 89, 1.73f);
+        a.armazenaPessoas("Ana", 59, 1.73f);
+        a.armazenaPessoas("Teste", 67, 1.73f);
 
         System.out.println();
 
