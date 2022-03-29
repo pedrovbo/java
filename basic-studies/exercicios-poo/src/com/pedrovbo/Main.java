@@ -3,6 +3,8 @@ package com.pedrovbo;
 import com.pedrovbo.exercicio1.Pessoa;
 import com.pedrovbo.exercicio2.Agenda;
 import com.pedrovbo.exercicio3.Elevador;
+import com.pedrovbo.exercicio4.ControleRemoto;
+import com.pedrovbo.exercicio4.Televisao;
 
 import java.text.ParseException;
 
@@ -10,7 +12,18 @@ public class Main {
 
     public static void main(String[] args) throws ParseException {
 
-        Elevador e = new Elevador();
+        Televisao t = new Televisao();
+        ControleRemoto c = new ControleRemoto(t);
+
+        c.ligar();
+        c.ligar();
+        c.aumentarVolume();
+        c.trocarCanal(13);
+        c.trocarCanal(2);
+        c.status();
+        System.out.println(t);
+
+        /*Elevador e = new Elevador();
         e.Inicializa(10, 10);
         e.Entra();
         e.Entra();
@@ -18,7 +31,7 @@ public class Main {
         e.Sobe();
         e.Sobe();
         e.Desce();
-        System.out.println(e);
+        System.out.println(e);*/
 
         /*System.out.println("Lista de Exercícios POO");
 
