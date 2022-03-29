@@ -2,13 +2,25 @@ package com.pedrovbo;
 
 import com.pedrovbo.exercicio1.Pessoa;
 import com.pedrovbo.exercicio2.Agenda;
+import com.pedrovbo.exercicio3.Elevador;
 
 import java.text.ParseException;
 
 public class Main {
 
     public static void main(String[] args) throws ParseException {
-        System.out.println("Lista de Exercícios POO");
+
+        Elevador e = new Elevador();
+        e.Inicializa(10, 10);
+        e.Entra();
+        e.Entra();
+        e.Sai();
+        e.Sobe();
+        e.Sobe();
+        e.Desce();
+        System.out.println(e);
+
+        /*System.out.println("Lista de Exercícios POO");
 
         Pessoa p = new Pessoa();
 
@@ -39,7 +51,7 @@ public class Main {
 
         a.imprimeAgenda();
 
-        a.imprimePessoa(0);
+        a.imprimePessoa(0);*/
 
 
 
