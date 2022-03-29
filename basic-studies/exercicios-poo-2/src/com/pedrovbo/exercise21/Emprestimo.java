@@ -1,6 +1,8 @@
 package com.pedrovbo.exercise21;
 
+import java.time.Duration;
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +30,27 @@ public class Emprestimo {
         this.acervoLivros = new ArrayList<Livro>();
     }
 
-    public void emprestar(Livro l, String titulo) {
+    public void emprestar(String titulo, Pessoa p) {
+        titulo = titulo.toUpperCase();
+        long dur;
+        if (buscarLivro(titulo)) {
+            this.setDataInicio(LocalDate.now());
+            this.setDataFim(dataInicio.plusDays(15));
+            dur = ChronoUnit.DAYS.between(this.dataInicio, this.dataFim);
+            this.setDuracao((int) dur);
+            this.setUsuario(p);
+            for (Livro i : this.acervoLivros
+            ) {
+                if (i.getTitulo().toUpperCase().contentEquals(titulo)) {
+                    i.setStatus("Emprestado");
+                }
+            }
 
+            System.out.println("Empréstimo realizado com sucesso à " + p.getNome());
+
+        } else {
+            System.out.println("O livro não faz parte do acervo!");
+        }
     }
 
     public boolean buscarLivro(String titulo) {
@@ -37,7 +58,7 @@ public class Emprestimo {
         boolean encontrado = false;
         for (Livro i : acervoLivros
         ) {
-            if(i.getTitulo().toUpperCase().contentEquals(titulo)){
+            if (i.getTitulo().toUpperCase().contentEquals(titulo)) {
                 encontrado = true;
             }
         }

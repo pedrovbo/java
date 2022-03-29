@@ -12,7 +12,7 @@ public class Pessoa {
     }
 
     public void fazerEmprestimo(Emprestimo e, String titulo){
-
+        e.emprestar(titulo, this);
     }
 
     public String getNome() {
