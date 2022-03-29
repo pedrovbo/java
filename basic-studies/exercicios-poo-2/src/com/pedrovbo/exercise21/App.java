@@ -25,6 +25,8 @@ public class App {
 
         p.fazerEmprestimo(e,"The Complete Robot");
 
+        System.out.println(e.);
+
         System.out.println(e.buscarLivro("O nome do vento"));
 
         System.out.println(e.getAcervoLivros());

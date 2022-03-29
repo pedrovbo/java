@@ -53,6 +53,8 @@ public class Emprestimo {
         }
     }
 
+    //TODO: implementar metodo pra verificar livros que estao emprestados
+
     public boolean buscarLivro(String titulo) {
         titulo = titulo.toUpperCase();
         boolean encontrado = false;
