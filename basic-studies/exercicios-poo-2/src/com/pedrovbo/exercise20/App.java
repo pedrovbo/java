@@ -14,5 +14,7 @@ public class App {
         a.buscaContato("Robson");
 
         System.out.println(a);
+
+        a.totalContatos();
     }
 }

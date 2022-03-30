@@ -1,6 +1,7 @@
 package com.pedrovbo.exercise20;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Agenda {
@@ -31,6 +32,18 @@ public class Agenda {
         if (!encontrado) {
             System.out.println("Contato não encontrado!");
         }
+    }
+
+    public void totalContatos() {
+        int total = 0;
+        for (Contato i : this.contatos
+        ) {
+            total++;
+        }
+
+        System.out.println("Total de contatos: " + total);
+
+
     }
 
     public List<Contato> getContatos() {
