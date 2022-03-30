@@ -18,7 +18,7 @@ public class Ex14 {
         List<Integer> numeros1 = new ArrayList<>();
         List<Integer> numeros2 = new ArrayList<>();
         List<Integer> ordenados;
-        List<Integer> maiorDez = null;
+
 
         Random rand = new Random();
 
