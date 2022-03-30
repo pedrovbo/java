@@ -23,13 +23,16 @@ public class App {
         Emprestimo e = new Emprestimo();
         e.setAcervoLivros(acervo);
 
-        p.fazerEmprestimo(e,"The Complete Robot");
+        p.fazerEmprestimo(e, "The Complete Robot");
+        p.fazerEmprestimo(e, "A Política");
 
-        System.out.println(e.);
+        System.out.println(e);
 
         System.out.println(e.buscarLivro("O nome do vento"));
 
         System.out.println(e.getAcervoLivros());
+
+        e.consultaEmprestimos();
 
         System.out.println("Deseja pegar um livro emprestado? ");
 

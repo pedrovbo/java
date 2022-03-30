@@ -53,7 +53,16 @@ public class Emprestimo {
         }
     }
 
-    //TODO: implementar metodo pra verificar livros que estao emprestados
+
+    public void consultaEmprestimos() {
+
+        for (Livro i : this.acervoLivros
+        ) {
+            if (i.getStatus().toUpperCase().contentEquals("EMPRESTADO")) {
+                System.out.println(i);
+            }
+        }
+    }
 
     public boolean buscarLivro(String titulo) {
         titulo = titulo.toUpperCase();
